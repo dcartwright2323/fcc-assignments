@@ -1,5 +1,105 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
+
+body{ 
+
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#container {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+    font-family: Poppins, sans-serif;
+    line-height: 22.4px;
+
+    margin: 20px;
+    padding: 50px;
+    
+    background-color: var(--color-darkblue-alpha);
+    border-radius: 0.6%;
+    opacity: 0.75;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#description {
+    font-style: italic;
+}
+
+.form-group {
+    display: block;
+    margin: 10px;
+}
+
+.form-group label, p {
+    display: block;
+    margin: 0px 0px 8px 0px;
+    font-size: 18px;
+    width: 100%;
+}
+#name, #email, #number, #dropdown, #most-like, #comments{
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(206, 212, 218); 
+    border-radius: 0.25rem;
+    display: block;
+    width: 100%;
+    height: 2.rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: white;
+    background-clip: padding-box;
+    margin: 0px 0px 30px 0px;
+}
+
+#comments {
+    height: 6rem;
+    font-family: Arial;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 3;
+}
+}
+
+
+
+
+
